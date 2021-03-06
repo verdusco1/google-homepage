@@ -3,7 +3,6 @@
     }
 
     nav {
-        background-color: ;
         min-height: 65px;
     }
 
@@ -19,12 +18,17 @@
     }
 
     .nav-left .nav-link {
-        padding-left: 15px;
+        margin-left: 15px;
     }
 
     .nav-right .nav-link {
-        padding-right: 15px;
+        margin-right: 15px;
         opacity: 0.85 !important;
+
+    }
+
+    .nav-right .nav-link:hover {
+        opacity: 0.75 !important;
 
     }
 
@@ -34,8 +38,13 @@
 
     .nav-link {
         text-decoration: none;
-        font-size: 14px;
+        font-size: 13px;
         color: #000;
+        opacity: 0.75;
+    }
+
+    .nav-link:hover {
+        border-bottom: 1px solid black;
         opacity: 0.75;
     }
 
@@ -50,12 +59,10 @@
         background-color: #125dd4;
         border-radius: 2px;
         width: 5;
-        height:;
     }
 
 
    #main {
-        background-color: gray;
         position: absolute;
         width: 100%;
         height: 500px;
@@ -68,12 +75,11 @@
         text-align: center;
         height: 233px;
         margin-top: 89px;
-        background-color: green;
-
 
     }
 
     #logo {
+        user-select: ;
         position: relative;
         top: 50%;
         transform: translate(0, -50%);
@@ -81,16 +87,17 @@
 
     .search-container {
         height: 118px;
-        background-color: tan;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
 
    #search {
         border: none;
-        width: 460px;
-        border-radius: 20px;
+        border: 1px solid #dfe1e5;
+        width: 482px;
+        border-radius: 100px;
         margin: 0;
         padding: 0;
         color: rgba(0,0,0,.87);
@@ -100,3 +107,47 @@
         line-height: 34px;
         font: 16px arial,sans-serif;
    }
+
+   .button-container {
+    padding-top: 18px;
+   }
+
+   .button-container button {
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    color: #5F6368;
+    height: 36px;
+    cursor: pointer;
+    user-select: none;
+}
+
+footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left a {
+    margin-left: 27px;
+}
+
+.footer-right a {
+    margin-right: 27px;
+}
+
+.footer-link {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 14px;
+}
